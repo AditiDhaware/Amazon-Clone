@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="a1.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="a1.js">
+  <title>Amazon</title>
+</head>
+<body>
+  <header>
+   <div class="navbar border">
+    <div class="navbar-logo">
+      <div class="logo"> 
+      </div>
+    </div>
+    <div class="nav-add border">
+      <p class="add-fr"> Delivering to Pune </p> 
+        <div class="add-icon">
+        <i class="fa-solid fa-location-dot"></i>
+     
+        <p class="add-sec">
+        Update location
+      </p>
+    </div>
+    </div>
+    <div class="nav-search border">
+      <select class="search-all">
+        <option> All</option>
+      </select>
+      <input placeholder="Serach Amazon.in" class="search-text">
+      <div class="search-icon">
+      <i class="fa-solid fa-magnifying-glass"></i>
+    </div>
+    </div>
+    
+
+    <div class="nav-acc border">
+      <p class="acc-fr"> Hello,sign in</p>
+      <select class="acc-sec">
+      <option> Account & Lists</option>
+    </select>
+    </div>
+
+    <div class="nav-acc border">
+      <p class="acc-fr">Returns</p>
+      <p class="acc-sec">
+       & Orders
+    </p>
+    </div>
+    <div class="nav-cart">
+    <i class="fa-solid fa-cart-shopping"></i>
+    Cart
+   </div>
+  </div>
+
+  <div class="panel">
+    <div class="all border">
+    <i class="fa-solid fa-bars"></i>
+    <p>All</p>
+    </div>
+
+
+
+    <div class="panel-all border">
+    
+<p>Fresh</p>
+<p>Amazon miniTV</p>
+<p>Sell</p>
+<p>Best Sellers</p>
+<p>Mobiles
+  <p>Today's Deals</p>
+  <p></p>Electronics</p>
+  <p>Customer Service</p>
+<p>New Releases</p>
+<p>Prime</p>
+</div>
+<div class="border">
+  <p class="panel-two "> New Launches From Mobiles,electronics 
+    &more| Shop now</p>
+    </div>
+</div>
+
+    
+<div class="slider-container">
+  <div class="slider">
+    <div class="slide"><img src="1.jpg"></div>
+    <div class="slide"><img src="2.jpg"></div>
+    <div class="slide"><img src="3.jpg"></div>
+    <div class="slide"><img src="4.jpg"></div>
+    <div class="slide"><img src="5.jpg"></div>
+    <div class="slide"><img src="6.jpg"></div>
+    <!-- Add more slides as needed -->
+  </div>
+</div>
+
+<!-- Optional: Add navigation buttons -->
+<div class="border1">
+<div class="prev " onclick="prevSlide()">&#10094;</div>
+<div class="next " onclick="nextSlide()">&#10095;</div>
+
+
+
+</div>
+
+
+
+
+<script>
+  let currentSlide = 0;
+
+  function showSlide(index) {
+    const slider = document.querySelector('.slider');
+    const slideWidth = document.querySelector('.slide').offsetWidth;
+    currentSlide = (index + slider.children.length) % slider.children.length;
+    const translateValue = -currentSlide * slideWidth + 'px';
+    slider.style.transform = 'translateX(' + translateValue + ')';
+  }
+
+  function prevSlide() {
+    showSlide(currentSlide - 1);
+  }
+
+  function nextSlide() {
+    showSlide(currentSlide + 1);
+  }
+</script>
+ 
+
+<div class="container-box ">
+
+  <div class="box1 Box">
+<div class="box11">
+  <div class="heading">
+    <h2>Revamp your home in style</h2>
+    <div class="images1">
+    <img src="b11.jpg" alt="">
+    <p>Cushion covers, bedsheets & more 
+      </p>
+  
+  </div>
+  <div class="images1">
+    <br>
+    <img src="b13.jpg" >
+    <p>
+      Home Storage 
+      </p>
+  </div>
+</div>
+</div>
+
+<div class="box12">
+    <div class="images1">   
+    <img src="b12.jpg" alt="">
+    <p>Figurines, vases and more 
+      </p>
+      <br><br>
+  </div>
+  <div class="images1">
+  <br> <br>
+    <img src="b14.jpg" alt="">
+    <p>
+Lighting solutions
+      </p>
+  </div>
+ 
+  </div>
+  <p class="bod1">Explore All</p>
+</div>
+
+
+
+    <div class="box2 Box ">
+      <h2 heading>Up to 60% off | Styles for men</h2>
+      <div class="b21"> 
+        <img src="21.jpg" alt="">
+       <p>clothing </p> 
+       <img src="22.jpg" alt="">
+       <p> footware</p>
+      </div>
+      <div class="b22">
+        <img src="23.jpg" alt="">
+        <p>Watches</p>
+        <div class="b222">
+        <img src="24.jpg" alt="">
+        <p>Bags & Wallets</p>
+        </div>
+
+      </div>
+      <p class="bod3">Shop Now</p>
+
+    </div>
+      <div class="box3 Box">
+        <h2>Up to 50% off | International brands</h2>
+        <img src="b3.jpg" alt="">
+       <p>see more</p> 
+
+      </div>
+
+        <div class="box4 Box">
+          <h2 class="heading">Bluetooth Calling Smartwatch starts at...</h2>
+          <div class="Box-img" style="background-image: url('box4.jpg');">
+        </div>
+        <p class="bod">Shop Now</p>
+        </div>
+
+        
+</div>
+</div>
+<div class="shop ">
+<div class="box1 Boxx">
+  <div class="head1">
+    <h2>Starting ₹99 | Indoor plants</h2>
+  </div>
+  <div class="i1">
+    <img src="11.jpg" alt="">
+  </div>
+  <div class="seemore">
+    see more
+  </div>
+</div>
+
+<div class="box2 Boxx">
+  <div class="head1">
+    <h3>Under ₹699 | Combo packs | Amazon brands & more</h3>
+  </div>
+  <div class="i1">
+    <img src="222.jpg" alt="">
+  </div>
+  <div class="seemore">
+    see more
+  </div>
+</div>
+<div class="box3 Boxx">
+  <div class="head1">
+    <h3>Season finale streaming now | Watch only on....</h3>
+  </div>
+  <div class="i1">
+    <img src="333.jpg" alt="">
+  </div>
+  <div class="seemore">
+  </div>
+</div>
+<div class="box4 Boxx">
+  <div class="head1">
+    <h4>Up to 50% off | Experience the joy of cooking with kitchen appliances from stores nearby</h4>
+  </div>
+  <div class="i1">
+    <img src="4444.jpg" alt="">
+  </div>
+  <div class="seemore">
+    see more
+  </div>
+</div>
+</div>
+</header>
+<footer>
+  <div class="foot-p1">
+   
+    Back to top
+  </div>
+
+  <div class="foot-p2 ">
+<ul>
+   <p> Get to Know Us</p>
+   <a> About Us</a>
+   <a>Careers</a>
+   <a>Press Releases</a>
+   <a>Amazon Science</a>
+</ul>
+
+
+<ul>
+  <p>Connect with Us </p>
+<a>Facebook</a>
+<a>Twitter</a>
+<a>Instagram</a>
+</ul>
+
+<ul>
+  <p> Make Money with Us</p>
+  <a>Sell on Amazon</a>
+<a>Sell under Amazon Accelerator</a>
+<a>Protect and Build Your Brand</a>
+<a>Amazon Global Selling</a>
+<a>Become an Affiliate</a>
+<a>Fulfilment by Amazon</a>
+<a>Advertise Your Products</a>
+<a>Amazon Pay on Merchants</a> 
+</ul>
+
+<ul>
+  <p>Let Us Help You</p>
+  <a>COVID-19 and Amazon</a>
+  <a> Your Account</a>
+  <a>Returns Centre</a>
+  <a>100% Purchase Protection</a>
+  <a>Amazon App Download</a>
+  <a>Help</a>
+</ul>
+
+  </div>
+  <div class="foot-p3">
+  <div class="logo">
+    
+
+  </div>
+  </div>
+  <div class="foot-p4">
+    <div class="pages">
+     <a>Conditions of use</a>
+     <a>Privacy Notice</a>
+     <a>Interest-Based Ads</a>
+
+    </div>
+<div class="copy ">
+  © 1996-2024, Amazon.com, Inc. or its affiliates
+</div>
+</footer>
+  
+  
+</body>
+</html>
